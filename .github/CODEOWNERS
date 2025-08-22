@@ -1,0 +1,36 @@
+# CODEOWNERS file for queue-api-173
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-database @Armor-test/unit-governance @Armor-test/unit-devops
+
+# Directory ownership
+/middleware/ @Armor-test/squad-payments @Armor-test/squad-product @Armor-test/team-core
+/docs/ @Armor-test/dept-release @Armor-test/grp-integration @Armor-test/squad-api
+/deploy/ @Armor-test/unit-test @Armor-test/dept-billing @Armor-test/squad-reporting
+/app/ @Armor-test/squad-apps @Armor-test/dept-reporting @Armor-test/dept-api
+/extensions/ @Armor-test/grp-search @Armor-test/dept-notifications
+/dist/ @Armor-test/squad-mobile @Armor-test/dept-automation
+/static/ @Armor-test/squad-qa @Armor-test/team-research
+/security/ @Armor-test/squad-research @Armor-test/squad-search @Armor-test/squad-mobile
+/common/ @Armor-test/squad-ml @Armor-test/dept-release
+/shared/ @Armor-test/dept-logging @Armor-test/grp-storage
+/spec/ @Armor-test/unit-test @Armor-test/dept-logging
+
+# File type ownership
+*.tf @Armor-test/team-logging @Armor-test/squad-qa @Armor-test/squad-ux
+*.rs @Armor-test/unit-governance @Armor-test/team-notifications @Armor-test/team-core
+*.graphql @Armor-test/dept-logging @Armor-test/team-notifications @Armor-test/dept-data
+*.proto @Armor-test/dept-automation @Armor-test/grp-search @Armor-test/squad-database
+*.tsx @Armor-test/squad-apps @Armor-test/squad-frontend
+*.sh @Armor-test/squad-frontend @Armor-test/squad-cloud
+*.config @Armor-test/dept-security @Armor-test/unit-design
+*.rb @Armor-test/dept-data @Armor-test/grp-storage @Armor-test/squad-cache
+*.java @Armor-test/team-logging @Armor-test/dept-notifications
+*.json @Armor-test/squad-cache @Armor-test/dept-test @Armor-test/squad-search
+*.html @Armor-test/unit-governance @Armor-test/dept-billing @Armor-test/squad-payments
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
